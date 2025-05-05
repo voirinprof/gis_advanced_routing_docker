@@ -1,0 +1,17 @@
+#map {
+    height: 600px;
+    width: 100%;
+}
+#controls {
+    margin: 10px;
+}
+#controls label {
+    margin-right: 10px;
+}
+#controls input {
+    margin-right: 10px;
+    padding: 5px;
+}
+#controls button {
+    padding: 10px;
+}

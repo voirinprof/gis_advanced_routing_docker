@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Itinéraire Optimisé</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="controls">
+        <label for="demand">Demande de livraison (unité):</label>
+        <input type="number" id="demand" min="0" value="10">
+        <label for="num_vehicles">Nombre de véhicules:</label>
+        <input type="number" id="num_vehicles" min="1" value="2">
+        <label for="vehicle_capacity">Capacité par véhicule:</label>
+        <input type="number" id="vehicle_capacity" min="1" value="100">
+        <button onclick="optimizeRoute()">Optimiser l'itinéraire</button>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="/static/js/map.js"></script>
+</body>
+</html>
